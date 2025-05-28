@@ -12,29 +12,34 @@ A Laravel-based mission management application with a modern UI built using Boot
 
 ## Installation Steps
 
-1. **Clone the repository**
+1. **Install Laravel (if starting from scratch)**
+   ```bash
+   composer create-project laravel/laravel="^10.10" mission-management
+   ```
+
+2. **Clone the repository**
    ```bash
    git clone <repository-url>
    cd mission-management
    ```
 
-2. **Install PHP dependencies**
+3. **Install PHP dependencies**
    ```bash
    composer install
    ```
 
-3. **Install Node.js dependencies**
+4. **Install Node.js dependencies**
    ```bash
    npm install
    ```
 
-4. **Environment Setup**
+5. **Environment Setup**
    ```bash
    cp .env.example .env
    php artisan key:generate
    ```
 
-5. **Configure your database**
+6. **Configure your database**
    Edit the `.env` file and set your database credentials:
    ```
    DB_CONNECTION=mysql
@@ -45,18 +50,18 @@ A Laravel-based mission management application with a modern UI built using Boot
    DB_PASSWORD=your_database_password
    ```
 
-6. **Run database migrations and seeders**
+7. **Run database migrations and seeders**
    ```bash
    php artisan migrate
    php artisan db:seed
    ```
 
-7. **Build assets**
+8. **Build assets**
    ```bash
    npm run build
    ```
 
-8. **Start the development server**
+9. **Start the development server**
    ```bash
    php artisan serve
    ```
