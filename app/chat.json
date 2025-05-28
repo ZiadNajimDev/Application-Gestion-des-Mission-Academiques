@@ -1,0 +1,1143 @@
+{
+  "requesterUsername": "ZiadNajimDev",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/132491187",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 3289
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 55,
+              "endColumn": 9
+            },
+            "text": "\r\nby logic if the tacher is going on car why would the status be billet reservee. thats one note. other note Here's a concise breakdown of the Reservation Interface functionalities for all mission and transport type combinations:\r\n\r\nReservation Interface Functionalities\r\n\r\nMission Nationale (National) Transport Mode Accountant Actions Key Features Voiture Personnelle (Personal Car) - Verify vehicle documents Calculate km compensation (e.g., 3 DH/km) Process daily allowance (1,000 DH/day) - No ticket booking Distance calculator tool Vehicle info validation Transport Public (Bus/Train) - Book/reimburse tickets Upload e-tickets Calculate daily allowance - Transport provider selection Cost tracking Receipt upload Mission Internationale (International) Transport Mode Accountant Actions Key Features Avion (Flight) - Book flights + hotels Upload e-tickets Process int'l allowance (2,000 DH/day) - Flight comparator Seat selection Visa requirement alerts so make the right changes for this and For National Missions (Morocco Only) City Selection: ✅ Yes, the teacher sees a dropdown of all Moroccan cities (pre-loaded in the system). Key Features for Teachers Smart Dropdown:\r\n\r\nShows only Moroccan cities (international missions use text field). Auto-Distance Calculator (if \"Voiture Personnelle\" selected) and i have all the cities and how far are they from the home uni in rabat file called cities.json Accountant's View Later Sees the teacher’s selected city + calculated km in the reservation interface. Accountant’s View for \"Mission Nationale + Voiture Personnelle\" (Simplified to only show critical info)\r\n\r\nCore Details (Auto-Pulled from Teacher’s Submission) Teacher Name + Department Selected City (e.g., \"Rabat\")\r\n\r\nDates (Start/End) + Mission Purpose\r\n\r\nCar Details:\r\n\r\nLicense Plate\r\n\r\nMake/Model\r\n\r\nInsurance Validity\r\n\r\nFinancial Calculations (Auto-Generated) Distance: Teacher’s claimed km (e.g., \"300 km\")\r\n\r\nSystem’s pre-loaded distance (e.g., \"Rabat = 280 km\")\r\n\r\nEditable field (accountant can adjust if needed)\r\n\r\nCompensation:\r\n\r\n3 DH/km × [final km] → 840 DH (if accountant corrects to 280 km)\r\n\r\n1,000 DH/day × [days] → 3,000 DH (for 3 days)\r\n\r\nTotal Estimated Payout: 3,840 DH (highlighted in bold)\r\n\r\nAction Buttons ✅ Approve: Lock km + notify teacher ✏️ Edit: Adjust km/days if data seems wrong\r\n\r\n❌ Reject: Request clarification (e.g., \"Upload odometer photos\")\r\n\r\nAccountant’s Interface: \"Mission Internationale + Avion\" (What the accountant sees/does after teacher submits request)\r\n\r\nCore Mission Details Teacher: Name, Department, Contact Destination: City/Country (e.g., \"Paris, France\")\r\n\r\nDates: Start/End (+ total days) 2. Financial & Logistics Section A. Flight Booking\r\n\r\nAuto-Suggested Flights: System show options (price) from InternationCities.json B. Allowance Calculation\r\n\r\nDaily Rate: 2,000 DH/day × [mission days]\r\n\r\nTotal Estimate:\r\n\r\nFlight: €500 (≈5,000 DH) Allowance: 5 days × 2,000 DH = 10,000 DH Total: ~15,000 DH 4. Key Buttons & Actions Button Action \"Book Flight\" Reserve tickets (paid to airline) \"Notify Teacher\" Send flight details/documents needed \"Approve Payout\" Release allowance post-mission give me all the file names that i need to give to my pro programmer friend to help me do this implementation\r\n\r\nUser.php\r\n:102-120",
+            "kind": "text"
+          }
+        ],
+        "text": "\r\nby logic if the tacher is going on car why would the status be billet reservee. thats one note. other note Here's a concise breakdown of the Reservation Interface functionalities for all mission and transport type combinations:\r\n\r\nReservation Interface Functionalities\r\n\r\nMission Nationale (National) Transport Mode Accountant Actions Key Features Voiture Personnelle (Personal Car) - Verify vehicle documents Calculate km compensation (e.g., 3 DH/km) Process daily allowance (1,000 DH/day) - No ticket booking Distance calculator tool Vehicle info validation Transport Public (Bus/Train) - Book/reimburse tickets Upload e-tickets Calculate daily allowance - Transport provider selection Cost tracking Receipt upload Mission Internationale (International) Transport Mode Accountant Actions Key Features Avion (Flight) - Book flights + hotels Upload e-tickets Process int'l allowance (2,000 DH/day) - Flight comparator Seat selection Visa requirement alerts so make the right changes for this and For National Missions (Morocco Only) City Selection: ✅ Yes, the teacher sees a dropdown of all Moroccan cities (pre-loaded in the system). Key Features for Teachers Smart Dropdown:\r\n\r\nShows only Moroccan cities (international missions use text field). Auto-Distance Calculator (if \"Voiture Personnelle\" selected) and i have all the cities and how far are they from the home uni in rabat file called cities.json Accountant's View Later Sees the teacher’s selected city + calculated km in the reservation interface. Accountant’s View for \"Mission Nationale + Voiture Personnelle\" (Simplified to only show critical info)\r\n\r\nCore Details (Auto-Pulled from Teacher’s Submission) Teacher Name + Department Selected City (e.g., \"Rabat\")\r\n\r\nDates (Start/End) + Mission Purpose\r\n\r\nCar Details:\r\n\r\nLicense Plate\r\n\r\nMake/Model\r\n\r\nInsurance Validity\r\n\r\nFinancial Calculations (Auto-Generated) Distance: Teacher’s claimed km (e.g., \"300 km\")\r\n\r\nSystem’s pre-loaded distance (e.g., \"Rabat = 280 km\")\r\n\r\nEditable field (accountant can adjust if needed)\r\n\r\nCompensation:\r\n\r\n3 DH/km × [final km] → 840 DH (if accountant corrects to 280 km)\r\n\r\n1,000 DH/day × [days] → 3,000 DH (for 3 days)\r\n\r\nTotal Estimated Payout: 3,840 DH (highlighted in bold)\r\n\r\nAction Buttons ✅ Approve: Lock km + notify teacher ✏️ Edit: Adjust km/days if data seems wrong\r\n\r\n❌ Reject: Request clarification (e.g., \"Upload odometer photos\")\r\n\r\nAccountant’s Interface: \"Mission Internationale + Avion\" (What the accountant sees/does after teacher submits request)\r\n\r\nCore Mission Details Teacher: Name, Department, Contact Destination: City/Country (e.g., \"Paris, France\")\r\n\r\nDates: Start/End (+ total days) 2. Financial & Logistics Section A. Flight Booking\r\n\r\nAuto-Suggested Flights: System show options (price) from InternationCities.json B. Allowance Calculation\r\n\r\nDaily Rate: 2,000 DH/day × [mission days]\r\n\r\nTotal Estimate:\r\n\r\nFlight: €500 (≈5,000 DH) Allowance: 5 days × 2,000 DH = 10,000 DH Total: ~15,000 DH 4. Key Buttons & Actions Button Action \"Book Flight\" Reserve tickets (paid to airline) \"Notify Teacher\" Send flight details/documents needed \"Approve Payout\" Release allowance post-mission give me all the file names that i need to give to my pro programmer friend to help me do this implementation\r\n\r\nUser.php\r\n:102-120"
+      },
+      "variableData": {
+        "variables": [
+          {
+            "id": "copilot.codebase",
+            "name": "codebase",
+            "fullName": "Codebase",
+            "value": "Here is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/Director/dashboard_content.html` starting at line 295:\n```html\n<td>15,000 DH</td>\n                        <td><span class=\"badge bg-success\">Terminée</span></td>\n                    </tr>\n                    <tr>\n                        <td>Pr. Hassan El Fassi</td>\n                        <td>Physique</td>\n                        <td>Atelier de formation</td>\n                        <td>5-7 Mars 2023</td>\n                        <td>3,000 DH</td>\n                        <td><span class=\"badge bg-success\">Terminée</span></td>\n                    </tr>\n                    <tr>\n                        <td>Dr. Amina Berrada</td>\n                        <td>Mathématiques</td>\n                        <td>Conférence académique</td>\n                        <td>15-18 Février 2023</td>\n                        <td>12,500 DH</td>\n                        <td><span class=\"badge bg-success\">Terminée</span></td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n        <a href=\"#\" class=\"btn btn-outline-primary\">Voir toutes les missions</a>\n    </div>\n</div>\n            </main>\n        </div>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/chef Head/mission_validate.html` starting at line 281:\n```html\n<td>15 Mai 2023 - 20 Mai 2023 (5 jours)</td>\n                </tr>\n                <tr>\n                    <th>Destination:</th>\n                    <td>Paris, France - Université de Paris</td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n</div>\n<div class=\"col-md-6\">\n    <h6>Détails financiers</h6>\n    <div class=\"card border-primary\">\n        <div class=\"card-body\">\n            <div class=\"mb-2\">\n                <small class=\"text-muted\">Indemnité journalière:</small>\n                <p class=\"mb-0\">2,000 DH/jour</p>\n            </div>\n            <div class=\"mb-2\">\n                <small class=\"text-muted\">Total indemnités:</small>\n                <p class=\"mb-0\">10,000 DH (5 jours)</p>\n            </div>\n            <div class=\"mb-2\">\n                <small class=\"text-muted\">Frais de transport estimés:</small>\n                <p class=\"mb-0\">3,500 DH</p>\n            </div>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/AccountantController.php` starting at line 263:\n```php\n$endDate = \\Carbon\\Carbon::parse($mission->end_date);\n$durationDays = $startDate->diffInDays($endDate) + 1;\n\n// Define daily allowance based on mission type\n$dailyAllowance = $mission->type === 'internationale' ? 2000 : 400;\n$allowanceAmount = $dailyAllowance * $durationDays;\n\n// Get transport costs from reservations\n$transportAmount = $mission->reservations()->sum('cost');\n\n// Create or update payment\n$payment = Payment::updateOrCreate(\n    ['mission_id' => $mission->id],\n    [\n        'user_id' => Auth::id(),\n        'allowance_amount' => $allowanceAmount,\n        'transport_amount' => $transportAmount,\n        'total_amount' => $allowanceAmount + $transportAmount,\n        'status' => 'paid',\n        'payment_method' => $request->payment_method,\n        'payment_reference' => $request->payment_reference,\n        'payment_date' => $request->payment_date,\n        'comments' => $request->comments,\n    ]\n);\n\nreturn redirect()->route('accountant.payments')\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/MissionController.php` starting at line 64:\n```php\n'soumise' => Auth::user()->missions()->where('status', 'soumise')->count(),\n    'validee_chef' => Auth::user()->missions()->where('status', 'validee_chef')->count(),\n    'validee_directeur' => Auth::user()->missions()->where('status', 'validee_directeur')->count(),\n    'billet_reserve' => Auth::user()->missions()->where('status', 'billet_reserve')->count(),\n    'terminee' => Auth::user()->missions()->where('status', 'terminee')->count(),\n    'rejetee' => Auth::user()->missions()->where('status', 'rejetee')->count(),\n];\n// Process missions to add some computed properties\nforeach ($missions as $mission) {\n    // Add a human-readable date range\n    $startDate = Carbon::parse($mission->start_date);\n    $endDate = Carbon::parse($mission->end_date);\n    $mission->date_range = $startDate->format('d/m/Y') . ' - ' . $endDate->format('d/m/Y');\n    \n    // Add duration in days\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/edit.blade.php` starting at line 158:\n```php\n<input type=\"date\" class=\"form-control\" id=\"startDate\" name=\"startDate\" value=\"{{ $mission->start_date }}\" required>\n    </div>\n    <div class=\"col-md-6\">\n        <label for=\"endDate\" class=\"form-label\">Date de fin *</label>\n        <input type=\"date\" class=\"form-control\" id=\"endDate\" name=\"endDate\" value=\"{{ $mission->end_date }}\" required>\n    </div>\n</div>\n<div class=\"row mb-3\">\n    <div class=\"col-md-6\">\n        <label for=\"destinationCity\" class=\"form-label\">Ville de destination *</label>\n        <input type=\"text\" class=\"form-control\" id=\"destinationCity\" name=\"destinationCity\" value=\"{{ $mission->destination_city }}\" required>\n    </div>\n    <div class=\"col-md-6\">\n        <label for=\"destinationInstitution\" class=\"form-label\">Institution de destination *</label>\n        <input type=\"text\" class=\"form-control\" id=\"destinationInstitution\" name=\"destinationInstitution\" value=\"{{ $mission->destination_institution }}\" required>\n    </div>\n</div>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php` starting at line 210:\n```php\n<span class=\"badge bg-info\">Validée par chef dép.</span>\n                                                @break\n                                            @case('validee_directeur')\n                                                <span class=\"badge bg-primary\">Validée par directeur</span>\n                                                @break\n                                            @case('billet_reserve')\n                                                <span class=\"badge bg-secondary\">Billet réservé</span>\n                                                @break\n                                            @case('terminee')\n                                                <span class=\"badge bg-success\">Terminée</span>\n                                                @break\n                                            @case('rejetee')\n                                                <span class=\"badge bg-danger\">Rejetée</span>\n                                                @break\n                                            @default\n                                                <span class=\"badge bg-secondary\">{{ $mission->status }}</span>\n                                        @endswitch\n                                    </span>\n                                </li>\n                            </ul>\n                        </div>\n                    </div>\n                    \n                    <h6 class=\"fw-bold\">Objectif de la mission</h6>\n                    <p>{{ $mission->objective }}</p>\n                    \n                    @if($mission->documents->isNotEmpty())\n<div class=\"mb-3\">\n    <h6 class=\"fw-bold\">Documents joints</h6>\n    <div class=\"list-group\">\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/print.blade.php` starting at line 170:\n```php\nAvion\n                    @break\n                @default\n                    {{ $mission->transport_type }}\n            @endswitch\n        </div>\n    </div>\n    @if($mission->supervisor_name)\n    <div class=\"info-row\">\n        <div class=\"info-label\">Encadrant:</div>\n        <div>{{ $mission->supervisor_name }}</div>\n    </div>\n    @endif\n</div>\n\n<!-- Date and Signature Section -->\n<div class=\"row signature-section\">\n    <div class=\"col-md-6\">\n        <div>Fait à Rabat, le {{ $today }}</div>\n        <div class=\"mt-2\">Signature de l'intéressé(e):</div>\n        <div class=\"signature-box\"></div>\n    </div>\n    <div class=\"col-md-6 text-end\">\n        <div>Le Doyen de la Faculté</div>\n        <div class=\"signature-box ms-auto\"></div>\n    </div>\n</div>\n\n<!-- Footer -->\n<div class=\"footer\">\n    <div>Université Mohammed V de Rabat - Faculté des Sciences</div>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/create.blade.php` starting at line 213:\n```php\ndocument.getElementById('endDate').addEventListener('change', function() {\n    const startDate = new Date(document.getElementById('startDate').value);\n    const endDate = new Date(this.value);\n    \n    if (endDate < startDate) {\n        alert('La date de fin ne peut pas être antérieure à la date de début.');\n        this.value = document.getElementById('startDate').value;\n    }\n});\n// Dynamic transport type based on mission type\ndocument.getElementById('missionType').addEventListener('change', function() {\n    const transportTypeSelect = document.getElementById('transportType');\n    const hiddenTransportType = document.getElementById('hiddenTransportType');\n    \n    if (this.value === 'internationale') {\n        // For international missions, set transport to 'avion' and disable select\n        transportTypeSelect.value = 'avion';\n        transportTypeSelect.disabled = true;\n        transportTypeSelect.classList.add('bg-light');\n        \n        // Enable the hidden input to ensure 'avion' is submitted\n        hiddenTransportType.disabled = false;\n    } else {\n        // For national missions, enable the select\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/MissionController.php` starting at line 296:\n```php\n$mission->formatted_start_date = Carbon::parse($mission->start_date)->format('d/m/Y');\n        $mission->formatted_end_date = Carbon::parse($mission->end_date)->format('d/m/Y');\n        $mission->duration = Carbon::parse($mission->start_date)->diffInDays(Carbon::parse($mission->end_date)) + 1;\n        \n        // Get the user (teacher) information\n        $user = Auth::user();\n        \n        // Get today's date for the document\n        $today = Carbon::now()->format('d/m/Y');\n        \n        // Generate a reference number if needed\n        $reference = 'MIS-' . date('Y', strtotime($mission->created_at)) . '-' . sprintf('%03d', $mission->id);\n        \n        return view('teacher.missions.print', compact('mission', 'user', 'today', 'reference'));\n    }\n}\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/DirectorController.php` starting at line 68:\n```php\nfor ($m = 1; $m <= 12; $m++) {\n    $monthLabels[] = Carbon::create(null, $m, 1)->format('M');\n    $monthData[] = $missionsByMonth[$m] ?? 0;\n}\n\n// Get total budget for all departments\n$totalBudget = DepartmentSetting::sum('budget');\n\n// Get department counts\n$departmentCount = User::whereNotNull('department')\n                      ->select('department')\n                      ->distinct()\n                      ->count();\n\n// Get teacher counts\n$teacherCount = User::where('role', 'enseignant')->count();\n\n// Get mission type distribution\n$missionTypes = [\n    'nationale' => Mission::where('type', 'nationale')->count(),\n    'internationale' => Mission::where('type', 'internationale')->count(),\n];\n\n// Get popular destinations\n$popularDestinations = Mission::select('destination_city', DB::raw('count(*) as count'))\n                          ->groupBy('destination_city')\n                          ->orderByDesc('count')\n                          ->limit(5)\n                          ->get();\n\nreturn view('director.dashboard', compact(\n    'user',\n    'pendingMissions',\n    'recentlyApprovedMissions',\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/proofs/create.blade.php` starting at line 127:\n```php\n<div class=\"row\">\n    <div class=\"col-md-6\">\n        <p class=\"mb-1\"><strong>Destination:</strong> {{ $mission->destination_city }}, {{ $mission->destination_institution }}</p>\n        <p class=\"mb-1\"><strong>Dates:</strong> {{ \\Carbon\\Carbon::parse($mission->start_date)->format('d/m/Y') }} - {{ \\Carbon\\Carbon::parse($mission->end_date)->format('d/m/Y') }}</p>\n    </div>\n    <div class=\"col-md-6\">\n        <p class=\"mb-1\"><strong>Type:</strong> {{ $mission->type === 'nationale' ? 'Mission nationale' : 'Mission internationale' }}</p>\n        <p class=\"mb-1\"><strong>Status:</strong> \n            @switch($mission->status)\n                @case('soumise')\n                    <span class=\"badge bg-warning\">Soumise</span>\n                    @break\n                @case('validee_chef')\n                    <span class=\"badge bg-info\">Validée (chef)</span>\n                    @break\n                @case('validee_directeur')\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php` starting at line 381:\n```php\n<div class=\"mb-3\">\n                        <label for=\"proofAmount\" class=\"form-label\">Montant (DH)</label>\n                        <input type=\"number\" step=\"0.01\" class=\"form-control\" id=\"proofAmount\" name=\"proofAmount\">\n                        <div class=\"form-text\">Saisir le montant si applicable (ex: pour un titre de transport, une facture d'hôtel, etc.)</div>\n                    </div>\n                    <div class=\"mb-3\">\n                        <label for=\"proofDescription\" class=\"form-label\">Description</label>\n                        <textarea class=\"form-control\" id=\"proofDescription\" name=\"proofDescription\" rows=\"2\"></textarea>\n                    </div>\n                </div>\n                <div class=\"modal-footer\">\n                    <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Annuler</button>\n                    <button type=\"submit\" class=\"btn btn-primary\">Téléverser</button>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>\n<!-- Bootstrap JS -->\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/director/mission_details.blade.php` starting at line 213:\n```php\n<div class=\"detail-item\">\n    <div class=\"detail-label\">Type de mission:</div>\n    <div>{{ $mission->type === 'nationale' ? 'Nationale' : 'Internationale' }}</div>\n</div>\n<div class=\"detail-item\">\n    <div class=\"detail-label\">Date de début:</div>\n    <div>{{ \\Carbon\\Carbon::parse($mission->start_date)->format('d/m/Y') }}</div>\n</div>\n<div class=\"detail-item\">\n    <div class=\"detail-label\">Date de fin:</div>\n    <div>{{ \\Carbon\\Carbon::parse($mission->end_date)->format('d/m/Y') }}</div>\n</div>\n<div class=\"detail-item\">\n    <div class=\"detail-label\">Durée:</div>\n    <div>{{ \\Carbon\\Carbon::parse($mission->start_date)->diffInDays(\\Carbon\\Carbon::parse($mission->end_date)) + 1 }} jour(s)</div>\n</div>\n<div class=\"detail-item\">\n    <div class=\"detail-label\">Transport:</div>\n    <div>\n        @switch($mission->transport_type)\n            @case('voiture')\n                Voiture personnelle\n                @break\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 317:\n```php\n</div>\n</div>\n@endsection\n@section('scripts')\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        // Handle reservation modal\n        var reservationModal = document.getElementById('reservationModal')\n        reservationModal.addEventListener('show.bs.modal', function (event) {\n            var button = event.relatedTarget\n            var missionId = button.getAttribute('data-mission-id')\n            var missionDetails = JSON.parse(button.getAttribute('data-mission-details'))\n            \n            var modal = this\n            modal.querySelector('#mission_id').value = missionId\n            modal.querySelector('#teacher-name').textContent = missionDetails.teacher\n            modal.querySelector('#department-name').textContent = missionDetails.department\n            modal.querySelector('#mission-title').textContent = missionDetails.title\n            modal.querySelector('#mission-destination').textContent = missionDetails.destination\n            modal.querySelector('#mission-dates').textContent = missionDetails.start_date + ' - ' + missionDetails.end_date\n            \n            // Set dates in form\n            document.getElementById('departure-date').value = missionDetails.start_date.split('/').reverse().join('-');\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 118:\n```php\n<i class=\"fas fa-edit\"></i>\n                                    @endif\n                                </button>\n                                \n                                @if(in_array($mission->status, ['billet_reserve', 'terminee']))\n    {{-- Show view/print button if reservation is done or mission is complete --}}\n    <button class=\"btn btn-sm btn-outline-secondary\" data-bs-toggle=\"modal\" data-bs-target=\"#reservationModal\" \n        data-mission-id=\"{{ $mission->id }}\"\n        data-mission-details=\"{{ json_encode([ /* ... existing details ... */ ]) }}\">\n        <i class=\"fas fa-eye\"></i> {{-- Or fas fa-print if that's the intended action --}}\n    </button>\n@elseif($mission->status == 'validee_directeur')\n    {{-- Show mark complete button only if waiting for reservation --}}\n    <button class=\"btn btn-sm btn-success mark-complete-btn\" data-mission-id=\"{{ $mission->id }}\">\n        <i class=\"fas fa-check\"></i>\n    </button>\n@else\n    {{-- Optionally handle other statuses or show nothing --}}\n    {{-- <span class=\"text-muted\">-</span> --}}\n@endif\n                            </td>\n                        </tr>\n                    @empty\n                        <tr>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 22:\n```php\n<input type=\"radio\" class=\"btn-check\" name=\"reservationFilter\" id=\"filter-urgent\" autocomplete=\"off\">\n            <label class=\"btn btn-outline-primary\" for=\"filter-urgent\">Urgentes</label>\n        </div>\n    </div>\n</div>\n<div class=\"card-body\">\n    @if(session('success'))\n        <div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">\n            {{ session('success') }}\n            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>\n        </div>\n    @endif\n    \n    <div class=\"table-responsive\">\n        <table class=\"table table-hover\">\n            <thead>\n                <tr>\n                    <th>Mission</th>\n                    <th>Enseignant</th>\n                    <th>Département</th>\n                    <th>Dates</th>\n                    <th>Type</th>\n                    <th>Transport</th>\n                    <th>Statut</th>\n                    <th>Actions</th>\n                </tr>\n            </thead>\n            <tbody>\n                @forelse($missions as $mission)\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php` starting at line 157:\n```php\n@switch($mission->transport_type)\n                    @case('voiture')\n                        Voiture personnelle\n                        @break\n                    @case('transport_public')\n                        Transport public\n                        @break\n                    @case('train')\n                        Train\n                        @break\n                    @case('avion')\n                        Avion\n                        @break\n                    @default\n                        {{ $mission->transport_type }}\n                @endswitch\n            </span>\n        </li>\n        <li class=\"list-group-item d-flex justify-content-between px-0\">\n            <span>Dates:</span>\n            <span class=\"fw-bold\">{{ \\Carbon\\Carbon::parse($mission->start_date)->format('d/m/Y') }} - {{ \\Carbon\\Carbon::parse($mission->end_date)->format('d/m/Y') }}</span>\n        </li>\n        <li class=\"list-group-item d-flex justify-content-between px-0\">\n            <span>Durée:</span>\n            <span class=\"fw-bold\">{{ \\Carbon\\Carbon::parse($mission->start_date)->diffInDays(\\Carbon\\Carbon::parse($mission->end_date)) + 1 }} jours</span>\n        </li>\n    </ul>\n</div>\n<div class=\"col-md-6\">\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/Director/all_missions.html` starting at line 175:\n```html\n<td>18,000 DH</td>\n    <td>\n        <button class=\"btn btn-sm btn-outline-primary\"><i class=\"fas fa-eye\"></i></button>\n    </td>\n</tr>\n<tr>\n    <td>Dr. Leila Mansouri</td>\n    <td>Informatique</td>\n    <td>Séminaire de recherche</td>\n    <td>20-25 Mars 2023</td>\n    <td><span class=\"badge bg-info\">Internationale</span></td>\n    <td><span class=\"badge bg-success\">Terminée</span></td>\n    <td>15,000 DH</td>\n    <td>\n        <button class=\"btn btn-sm btn-outline-primary\"><i class=\"fas fa-eye\"></i></button>\n    </td>\n</tr>\n<tr>\n    <td>Pr. Hassan El Fassi</td>\n    <td>Physique</td>\n    <td>Atelier de formation</td>\n    <td>5-7 Mars 2023</td>\n    <td><span class=\"badge bg-primary\">Nationale</span></td>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/teacher/mission_details.html` starting at line 229:\n```html\n<small class=\"text-muted\">Frais de transport:</small>\n            <p class=\"mb-0\">3,500 DH</p>\n        </div>\n        <hr>\n        <div class=\"mb-2\">\n            <small class=\"text-muted\">Montant total:</small>\n            <h5 class=\"mb-0\">13,500 DH</h5>\n        </div>\n        <div class=\"mb-2\">\n            <small class=\"text-muted\">Statut de paiement:</small>\n            <p class=\"mb-0\"><span class=\"badge bg-warning\">En attente de retour</span></p>\n        </div>\n    </div>\n</div>\n<div class=\"card border-info mb-3\">\n    <div class=\"card-header bg-info text-white\">\n        <h6 class=\"mb-0\">Documents</h6>\n    </div>\n    <div class=\"card-body\">\n        <div class=\"list-group list-group-flush\">\n            <a href=\"#\" class=\"list-group-item list-group-item-action d-flex justify-content-between align-items-center\">\n                <span>Billet d'avion</span>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/create.blade.php` starting at line 144:\n```php\n<select class=\"form-select\" id=\"transportType\" name=\"transportType\" required {{ old('missionType') == 'internationale' ? 'disabled' : '' }}>\n            <option value=\"\" selected disabled>Choisir le mode</option>\n            <option value=\"voiture\" {{ old('transportType') == 'voiture' ? 'selected' : '' }}>Voiture personnelle</option>\n            <option value=\"transport_public\" {{ old('transportType') == 'transport_public' ? 'selected' : '' }}>Transport public</option>\n            <option value=\"train\" {{ old('transportType') == 'train' ? 'selected' : '' }}>Train</option>\n            <option value=\"avion\" {{ old('transportType') == 'avion' || old('missionType') == 'internationale' ? 'selected' : '' }}>Avion</option>\n        </select>\n        <!-- Hidden input for internationale missions -->\n        <input type=\"hidden\" name=\"transportType\" value=\"avion\" id=\"hiddenTransportType\" disabled>\n    </div>\n</div>\n<div class=\"row mb-3\">\n    <div class=\"col-md-6\">\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/payments.blade.php` starting at line 74:\n```php\n<td>{{ number_format($transportAmount, 0) }} DH</td>\n<td>{{ number_format($totalAmount, 0) }} DH</td>\n<td>\n    @if($mission->payment && $mission->payment->status === 'paid')\n        <span class=\"badge bg-success\">Payé</span>\n    @else\n        <span class=\"badge bg-warning\">En attente</span>\n    @endif\n</td>\n<td>\n    @if($mission->payment && $mission->payment->status === 'paid')\n        <a href=\"{{ route('accountant.payments.print', $mission->payment->id) }}\" class=\"btn btn-sm btn-outline-secondary\">\n            <i class=\"fas fa-print\"></i>\n        </a>\n    @else\n        <button class=\"btn btn-sm btn-outline-primary me-1\" data-bs-toggle=\"modal\" data-bs-target=\"#paymentModal\" \n            data-mission-id=\"{{ $mission->id }}\"\n            data-mission-details=\"{{ json_encode([\n                'id' => $mission->id,\n                'title' => $mission->title,\n                'teacher' => $mission->user->name,\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 220:\n```php\n<div class=\"mb-3\">\n    <label class=\"form-label\">Type de transport *</label>\n    <select class=\"form-select\" name=\"type\" id=\"transport-type\" required>\n        <option value=\"\" selected disabled>Choisir</option>\n        <option value=\"flight\">Avion</option>\n        <option value=\"train\">Train</option>\n        <option value=\"bus\">Bus</option>\n        <option value=\"car\">Voiture personnelle</option>\n    </select>\n</div>\n<div class=\"row mb-3\">\n    <div class=\"col-md-6\">\n        <label class=\"form-label\">Date de départ *</label>\n        <input type=\"date\" name=\"departure_date\" class=\"form-control\" id=\"departure-date\" required>\n    </div>\n    <div class=\"col-md-6\">\n        <label class=\"form-label\">Date de retour *</label>\n        <input type=\"date\" name=\"return_date\" class=\"form-control\" id=\"return-date\" required>\n    </div>\n</div>\n<div class=\"mb-3\">\n    <label class=\"form-label\">Compagnie de transport *</label>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/edit.blade.php` starting at line 145:\n```php\n<div class=\"col-md-6\">\n        <label for=\"transportType\" class=\"form-label\">Mode de transport *</label>\n        <select class=\"form-select\" id=\"transportType\" name=\"transportType\" required>\n            <option value=\"voiture\" {{ $mission->transport_type === 'voiture' ? 'selected' : '' }}>Voiture personnelle</option>\n            <option value=\"transport_public\" {{ $mission->transport_type === 'transport_public' ? 'selected' : '' }}>Transport public</option>\n            <option value=\"train\" {{ $mission->transport_type === 'train' ? 'selected' : '' }}>Train</option>\n            <option value=\"avion\" {{ $mission->transport_type === 'avion' ? 'selected' : '' }}>Avion</option>\n        </select>\n    </div>\n</div>\n<div class=\"row mb-3\">\n    <div class=\"col-md-6\">\n        <label for=\"startDate\" class=\"form-label\">Date de début *</label>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 185:\n```php\n<div class=\"col-md-6\">\n    <h6>Détails de la mission</h6>\n    <div class=\"table-responsive\">\n        <table class=\"table table-sm table-borderless\">\n            <tbody>\n                <tr>\n                    <th width=\"40%\">Enseignant:</th>\n                    <td id=\"teacher-name\"></td>\n                </tr>\n                <tr>\n                    <th>Département:</th>\n                    <td id=\"department-name\"></td>\n                </tr>\n                <tr>\n                    <th>Type:</th>\n                    <td id=\"mission-type\"></td>\n                </tr>\n                <tr>\n                    <th>Titre:</th>\n                    <td id=\"mission-title\"></td>\n                </tr>\n                <tr>\n                    <th>Dates:</th>\n                    <td id=\"mission-dates\"></td>\n                </tr>\n                <tr>\n                    <th>Destination:</th>\n                    <td id=\"mission-destination\"></td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n</div>\n<div class=\"col-md-6\">\n    <h6>Réservation</h6>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/acountant/payements.html` starting at line 157:\n```html\n<td>3,500 DH</td>\n    <td>13,500 DH</td>\n    <td><span class=\"badge bg-warning\">En attente</span></td>\n    <td>\n        <button class=\"btn btn-sm btn-outline-primary me-1\" data-bs-toggle=\"modal\" data-bs-target=\"#paymentModal\">\n            <i class=\"fas fa-money-bill-wave\"></i>\n        </button>\n    </td>\n</tr>\n<tr>\n    <td>Séminaire de recherche</td>\n    <td>Dr. Fatima Zahra</td>\n    <td>10-15 Juin 2023</td>\n    <td><span class=\"badge bg-info\">Internationale</span></td>\n    <td>10,000 DH</td>\n    <td>4,200 DH</td>\n    <td>14,200 DH</td>\n    <td><span class=\"badge bg-warning\">En attente</span></td>\n    <td>\n        <button class=\"btn btn-sm btn-outline-primary me-1\" data-bs-toggle=\"modal\" data-bs-target=\"#paymentModal\">\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/director/reports.blade.php` starting at line 419:\n```php\n<div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: {{ $completionRate }}%\" aria-valuenow=\"{{ $completionRate }}\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n    </div>\n    <small>{{ $completionRate }}%</small>\n</td>\n<td>\n    @php\n        $internationalCount = $teacher->missions()->where('type', 'internationale')->count();\n        $internationalPercent = $teacher->missions_count > 0 ? round(($internationalCount / $teacher->missions_count) * 100) : 0;\n    @endphp\n    <div class=\"progress\" style=\"height: 5px; width: 100px;\">\n        <div class=\"progress-bar bg-info\" role=\"progressbar\" style=\"width: {{ $internationalPercent }}%\" aria-valuenow=\"{{ $internationalPercent }}\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n    </div>\n    <small>{{ $internationalCount }} ({{ $internationalPercent }}%)</small>\n</td>\n<td>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/teacher/mission_details.html` starting at line 206:\n```html\n<p class=\"mb-0\">Billet d'avion réservé par M. Youssef Alaoui</p>\n                    <a href=\"#\" class=\"btn btn-sm btn-outline-primary mt-2\"><i class=\"fas fa-download\"></i> Télécharger le billet</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n<div class=\"col-md-4\">\n    <div class=\"card border-primary mb-3\">\n        <div class=\"card-header bg-primary text-white\">\n            <h6 class=\"mb-0\">Détails financiers</h6>\n        </div>\n        <div class=\"card-body\">\n            <div class=\"mb-2\">\n                <small class=\"text-muted\">Indemnité journalière:</small>\n                <p class=\"mb-0\">2,000 DH/jour</p>\n            </div>\n            <div class=\"mb-2\">\n                <small class=\"text-muted\">Total indemnités:</small>\n                <p class=\"mb-0\">10,000 DH (5 jours)</p>\n            </div>\n            <div class=\"mb-2\">\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 95:\n```php\n@endif\n@elseif($mission->status == 'billet_reserve')\n    <span class=\"badge bg-success\">Complétée</span>\n@else\n    <span class=\"badge bg-secondary\">{{ ucfirst($mission->status) }}</span>\n@endif\n                            </td>\n                            <td>\n                                <button class=\"btn btn-sm btn-outline-primary me-1\" data-bs-toggle=\"modal\" data-bs-target=\"#reservationModal\" \n                                    data-mission-id=\"{{ $mission->id }}\"\n                                    data-mission-details=\"{{ json_encode([\n                                        'id' => $mission->id,\n                                        'teacher' => $mission->user->name,\n                                        'department' => $mission->user->department,\n                                        'title' => $mission->title,\n                                        'destination' => $mission->destination,\n                                        'start_date' => \\Carbon\\Carbon::parse($mission->start_date)->format('d/m/Y'),\n                                        'end_date' => \\Carbon\\Carbon::parse($mission->end_date)->format('d/m/Y'),\n                                        'type' => $mission->type,\n                                    ]) }}\">\n                                    @if($mission->status == 'billet_reserve')\n                                        <i class=\"fas fa-eye\"></i>\n                                    @else\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 244:\n```php\n<input type=\"text\" name=\"provider\" class=\"form-control\" placeholder=\"Air France, ONCF, etc.\" required>\n</div>\n<div class=\"mb-3\">\n    <label class=\"form-label\">Numéro de vol/train *</label>\n    <input type=\"text\" name=\"reservation_number\" class=\"form-control\" placeholder=\"AF1234, TNR123, etc.\" required>\n</div>\n<div class=\"mb-3\">\n    <label class=\"form-label\">Coût du transport (DH) *</label>\n    <input type=\"number\" name=\"cost\" class=\"form-control\" step=\"0.01\" required>\n</div>\n<div class=\"mb-3\">\n    <label class=\"form-label\">Hébergement nécessaire</label>\n    <div class=\"form-check\">\n        <input class=\"form-check-input\" type=\"checkbox\" id=\"needHotel\" name=\"need_hotel\">\n        <label class=\"form-check-label\" for=\"needHotel\">\n            Réserver un hôtel\n        </label>\n    </div>\n</div>\n<div id=\"hotelInfo\" style=\"display: none;\">\n    <div class=\"row mb-3\">\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 51:\n```php\n<tr class=\"reservation-row\" \n    data-status=\"{{ $mission->status }}\" \n    data-days-until=\"{{ $mission->start_date ? \\Carbon\\Carbon::now()->diffInDays(\\Carbon\\Carbon::parse($mission->start_date), false) : 0 }}\">\n    <td>\n        <div class=\"fw-bold\">{{ $mission->title }}</div>\n        <small>{{ $mission->destination }}</small>\n    </td>\n    <td>{{ $mission->user->name }}</td>\n    <td>{{ $mission->user->department }}</td>\n    <td>{{ \\Carbon\\Carbon::parse($mission->start_date)->format('d-d') }} {{ \\Carbon\\Carbon::parse($mission->start_date)->format('M Y') }}</td>\n    <td>\n        @if($mission->type == 'international')\n            <span class=\"badge bg-info\">Internationale</span>\n        @else\n            <span class=\"badge bg-primary\">Nationale</span>\n        @endif\n    </td>\n    <td>\n        @if($mission->reservations->count() > 0)\n            @php\n                $transportTypes = [];\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/AccountantController.php` starting at line 106:\n```php\n'missionCounts'\n    ));\n}\n\npublic function reservations()\n{\n    $user = Auth::user();\n    \n    // Get missions that need reservations (already approved by director)\n    $missions = Mission::whereIn('status', ['validee_directeur', 'billet_reserve', 'terminee'])\n       ->with(['user', 'reservations'])\n       ->orderBy('created_at', 'desc')\n       ->paginate(10); \n    \n    return view('accountant.reservations', compact('user', 'missions'));\n}\n\npublic function storeReservation(Request $request)\n{\n    $request->validate([\n        'mission_id' => 'required|exists:missions,id',\n        'type' => 'required|in:flight,train,hotel,other',\n        'provider' => 'required|string|max:255',\n        'reservation_number' => 'required|string|max:255',\n        'cost' => 'required|numeric|min:0',\n        'reservation_date' => 'required|date',\n        'notes' => 'nullable|string',\n        'attachment' => 'nullable|file|mimes:pdf,jpg,jpeg,png|max:5120',\n    ]);\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/print.blade.php` starting at line 138:\n```php\n<div>{{ $mission->objective }}</div>\n</div>\n<div class=\"info-row\">\n    <div class=\"info-label\">Lieu:</div>\n    <div>{{ $mission->destination_city }}, {{ $mission->destination_institution }}</div>\n</div>\n<div class=\"info-row\">\n    <div class=\"info-label\">Date de début:</div>\n    <div>{{ $mission->formatted_start_date }}</div>\n</div>\n<div class=\"info-row\">\n    <div class=\"info-label\">Date de fin:</div>\n    <div>{{ $mission->formatted_end_date }}</div>\n</div>\n<div class=\"info-row\">\n    <div class=\"info-label\">Durée totale:</div>\n    <div>{{ $mission->duration }} jour(s)</div>\n</div>\n<div class=\"info-row\">\n    <div class=\"info-label\">Mode de transport:</div>\n    <div>\n        @switch($mission->transport_type)\n            @case('voiture')\n                Voiture personnelle\n                @break\n            @case('transport_public')\n                Transport public\n                @break\n            @case('train')\n                Train\n                @break\n            @case('avion')\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php` starting at line 72:\n```php\nforeach($mission->reservations as $res) {\n                                        if($res->type == 'flight') $transportTypes[] = 'Vol';\n                                        if($res->type == 'train') $transportTypes[] = 'Train';\n                                        if($res->type == 'hotel') $transportTypes[] = 'Hôtel';\n                                    }\n                                @endphp\n                                {{ implode(' + ', $transportTypes) }}\n                            @else\n                                À déterminer\n                            @endif\n                        </td>\n                        <td>\n                            @php\n                                $daysUntil = \\Carbon\\Carbon::now()->diffInDays(\\Carbon\\Carbon::parse($mission->start_date), false);\n                            @endphp\n                            \n                            @if($mission->status == 'validee_directeur')\n@if($daysUntil < 7)\n    <span class=\"badge bg-danger\">À faire avant {{ \\Carbon\\Carbon::now()->addDays(3)->format('d/m') }}</span>\n@elseif($daysUntil < 14)\n    <span class=\"badge bg-warning\">À faire avant {{ \\Carbon\\Carbon::now()->addDays(5)->format('d/m') }}</span>\n@else\n    <span class=\"badge bg-info\">À réserver</span>\n```\n\nHere is a potentially relevant excerpt in `../../../../../../c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/payments.blade.php` starting at line 52:\n```php\n<td>{{ \\Carbon\\Carbon::parse($mission->start_date)->format('d-d') }} {{ \\Carbon\\Carbon::parse($mission->start_date)->format('M Y') }}</td>\n<td>\n    @if($mission->type == 'internationale')\n        <span class=\"badge bg-info\">Internationale</span>\n    @else\n        <span class=\"badge bg-primary\">Nationale</span>\n    @endif\n</td>\n\n@php\n    $startDate = \\Carbon\\Carbon::parse($mission->start_date);\n    $endDate = \\Carbon\\Carbon::parse($mission->end_date);\n    $durationDays = $startDate->diffInDays($endDate) + 1;\n    \n    $dailyAllowance = $mission->type === 'internationale' ? 2000 : 400;\n    $allowanceAmount = $dailyAllowance * $durationDays;\n    \n    $transportAmount = $mission->reservations->sum('cost');\n    $totalAmount = $allowanceAmount + $transportAmount;\n@endphp\n\n<td>{{ number_format($allowanceAmount, 0) }} DH</td>\n```",
+            "references": [
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\AccountantController.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 107,
+                    "startColumn": 1,
+                    "endLineNumber": 135,
+                    "endColumn": 8
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\AccountantController.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 264,
+                    "startColumn": 1,
+                    "endLineNumber": 290,
+                    "endColumn": 48
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\DirectorController.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/DirectorController.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/DirectorController.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 69,
+                    "startColumn": 1,
+                    "endLineNumber": 103,
+                    "endColumn": 32
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\MissionController.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/MissionController.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/MissionController.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 65,
+                    "startColumn": 1,
+                    "endLineNumber": 80,
+                    "endColumn": 28
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\MissionController.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/MissionController.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/MissionController.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 297,
+                    "startColumn": 1,
+                    "endLineNumber": 312,
+                    "endColumn": 2
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\payments.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/payments.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/payments.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 53,
+                    "startColumn": 1,
+                    "endLineNumber": 95,
+                    "endColumn": 51
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\reservations.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 23,
+                    "startColumn": 1,
+                    "endLineNumber": 142,
+                    "endColumn": 29
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\reservations.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 186,
+                    "startColumn": 1,
+                    "endLineNumber": 269,
+                    "endColumn": 27
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\reservations.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 318,
+                    "startColumn": 1,
+                    "endLineNumber": 341,
+                    "endColumn": 120
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\director\\mission_details.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/director/mission_details.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/director/mission_details.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 214,
+                    "startColumn": 1,
+                    "endLineNumber": 236,
+                    "endColumn": 23
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\director\\reports.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/director/reports.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/director/reports.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 420,
+                    "startColumn": 1,
+                    "endLineNumber": 434,
+                    "endColumn": 5
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\create.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 145,
+                    "startColumn": 1,
+                    "endLineNumber": 157,
+                    "endColumn": 27
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\create.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 214,
+                    "startColumn": 1,
+                    "endLineNumber": 238,
+                    "endColumn": 52
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\edit.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/edit.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/edit.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 146,
+                    "startColumn": 1,
+                    "endLineNumber": 175,
+                    "endColumn": 7
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\print.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/print.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/print.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 139,
+                    "startColumn": 1,
+                    "endLineNumber": 201,
+                    "endColumn": 69
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\show.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 158,
+                    "startColumn": 1,
+                    "endLineNumber": 186,
+                    "endColumn": 23
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\show.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 211,
+                    "startColumn": 1,
+                    "endLineNumber": 240,
+                    "endColumn": 29
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\show.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 382,
+                    "startColumn": 1,
+                    "endLineNumber": 401,
+                    "endColumn": 22
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\proofs\\create.blade.php",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/proofs/create.blade.php",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/proofs/create.blade.php",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 128,
+                    "startColumn": 1,
+                    "endLineNumber": 143,
+                    "endColumn": 43
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\acountant\\payements.html",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/acountant/payements.html",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/acountant/payements.html",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 158,
+                    "startColumn": 1,
+                    "endLineNumber": 177,
+                    "endColumn": 115
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\chef Head\\mission_validate.html",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/chef%20Head/mission_validate.html",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/chef Head/mission_validate.html",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 282,
+                    "startColumn": 1,
+                    "endLineNumber": 307,
+                    "endColumn": 19
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\Director\\all_missions.html",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/Director/all_missions.html",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/Director/all_missions.html",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 176,
+                    "startColumn": 1,
+                    "endLineNumber": 198,
+                    "endColumn": 61
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\Director\\dashboard_content.html",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/Director/dashboard_content.html",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/Director/dashboard_content.html",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 296,
+                    "startColumn": 1,
+                    "endLineNumber": 322,
+                    "endColumn": 15
+                  }
+                }
+              },
+              {
+                "kind": "reference",
+                "reference": {
+                  "uri": {
+                    "$mid": 1,
+                    "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\teacher\\mission_details.html",
+                    "_sep": 1,
+                    "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/teacher/mission_details.html",
+                    "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/teacher/mission_details.html",
+                    "scheme": "file"
+                  },
+                  "range": {
+                    "startLineNumber": 207,
+                    "startColumn": 1,
+                    "endLineNumber": 252,
+                    "endColumn": 44
+                  }
+                }
+              }
+            ],
+            "icon": {
+              "id": "folder"
+            }
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Collecting workspace information",
+            "uris": {}
+          }
+        },
+        {
+          "value": "**Plan:**\n• List each file that contains or governs functionality related to mission reservations, teacher inputs for transportation and cities, and accountant views/calculations.  \n• Include both controller files and view templates where changes are needed, plus the JSON files for city distances.\n\n**Files to consider:**\n\n- **mission-management/app/Http/Controllers/AccountantController.php**  \n  (Handles reservation processing, payment calculation and ticket status)\n\n- **mission-management/app/Http/Controllers/MissionController.php**  \n  (Contains logic for mission dates & status, including duration and allowance)\n\n- **mission-management/app/Http/Controllers/DirectorController.php**  \n  (May require adjustments if dashboard or mission details are impacted)\n\n- **mission-management/resources/views/teacher/missions/create.blade.php**  \n  (Teacher’s mission submission – transport mode selection, dynamic city dropdown for national missions, and auto-distance calculator integration)\n\n- **mission-management/resources/views/teacher/missions/edit.blade.php**  \n  (Teacher mission editing including transport type fields)\n\n- **mission-management/resources/views/teacher/missions/show.blade.php**  \n  (Displays mission details including transport and status display)\n\n- **mission-management/resources/views/teacher/missions/print.blade.php**  \n  (For printing mission details with travel and financial info)\n\n- **mission-management/resources/views/teacher/proofs/create.blade.php**  \n  (For handling document uploads such as odometer photos)\n\n- **mission-management/resources/views/director/mission_details.blade.php**  \n  (Displays complete mission information on the director’s side)\n\n- **mission-management/resources/views/accountant/reservations.blade.php**  \n  (Interface for reservations processing: display of mission details, transport types, and financial calculations)\n\n- **mission-management/resources/views/accountant/payments.blade.php**  \n  (Handles payment details and status display)\n\n- **mission-management/resources/views/director/reports.blade.php**  \n  (May be impacted by changes to status and financial computations)\n\n- **cities.json**  \n  (Contains pre-loaded Moroccan cities with their distances from Rabat)\n\n- **internationCities.json**  \n  (Contains information for international flight suggestions)\n\n- **User.php (lines 102–120)**  \n  (User model likely defines relationships and attributes needed for these features)\n\nProvide these file names to your pro programmer friend for implementing the described Reservation Interface functionalities.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "result": {
+        "timings": {
+          "firstProgress": 7256,
+          "totalElapsed": 9871
+        },
+        "metadata": {
+          "modelMessageId": "c2e4cfa2-8abd-4497-b5d0-2885c9d9e7ba",
+          "responseId": "34383bcb-5106-4767-86e6-626fa53527ca",
+          "sessionId": "ee78abbe-26e2-498f-b819-639c19711221",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "What about database schema changes?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "supportsSlowVariables": true,
+          "requester": {
+            "name": "ZiadNajimDev",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/132491187",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": []
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\AccountantController.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 107,
+                "startColumn": 1,
+                "endLineNumber": 135,
+                "endColumn": 8
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\AccountantController.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/AccountantController.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 264,
+                "startColumn": 1,
+                "endLineNumber": 290,
+                "endColumn": 48
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\DirectorController.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/DirectorController.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/DirectorController.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 69,
+                "startColumn": 1,
+                "endLineNumber": 103,
+                "endColumn": 32
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\MissionController.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/MissionController.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/MissionController.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 65,
+                "startColumn": 1,
+                "endLineNumber": 80,
+                "endColumn": 28
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\app\\Http\\Controllers\\MissionController.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/app/Http/Controllers/MissionController.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/app/Http/Controllers/MissionController.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 297,
+                "startColumn": 1,
+                "endLineNumber": 312,
+                "endColumn": 2
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\payments.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/payments.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/payments.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 53,
+                "startColumn": 1,
+                "endLineNumber": 95,
+                "endColumn": 51
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\reservations.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 23,
+                "startColumn": 1,
+                "endLineNumber": 142,
+                "endColumn": 29
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\reservations.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 186,
+                "startColumn": 1,
+                "endLineNumber": 269,
+                "endColumn": 27
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\accountant\\reservations.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/accountant/reservations.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 318,
+                "startColumn": 1,
+                "endLineNumber": 341,
+                "endColumn": 120
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\director\\mission_details.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/director/mission_details.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/director/mission_details.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 214,
+                "startColumn": 1,
+                "endLineNumber": 236,
+                "endColumn": 23
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\director\\reports.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/director/reports.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/director/reports.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 420,
+                "startColumn": 1,
+                "endLineNumber": 434,
+                "endColumn": 5
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\create.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 145,
+                "startColumn": 1,
+                "endLineNumber": 157,
+                "endColumn": 27
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\create.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/create.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 214,
+                "startColumn": 1,
+                "endLineNumber": 238,
+                "endColumn": 52
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\edit.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/edit.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/edit.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 146,
+                "startColumn": 1,
+                "endLineNumber": 175,
+                "endColumn": 7
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\print.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/print.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/print.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 139,
+                "startColumn": 1,
+                "endLineNumber": 201,
+                "endColumn": 69
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\show.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 158,
+                "startColumn": 1,
+                "endLineNumber": 186,
+                "endColumn": 23
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\show.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 211,
+                "startColumn": 1,
+                "endLineNumber": 240,
+                "endColumn": 29
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\missions\\show.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/missions/show.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 382,
+                "startColumn": 1,
+                "endLineNumber": 401,
+                "endColumn": 22
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\mission-management\\resources\\views\\teacher\\proofs\\create.blade.php",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/mission-management/resources/views/teacher/proofs/create.blade.php",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/mission-management/resources/views/teacher/proofs/create.blade.php",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 128,
+                "startColumn": 1,
+                "endLineNumber": 143,
+                "endColumn": 43
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\acountant\\payements.html",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/acountant/payements.html",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/acountant/payements.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 158,
+                "startColumn": 1,
+                "endLineNumber": 177,
+                "endColumn": 115
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\chef Head\\mission_validate.html",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/chef%20Head/mission_validate.html",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/chef Head/mission_validate.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 282,
+                "startColumn": 1,
+                "endLineNumber": 307,
+                "endColumn": 19
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\Director\\all_missions.html",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/Director/all_missions.html",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/Director/all_missions.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 176,
+                "startColumn": 1,
+                "endLineNumber": 198,
+                "endColumn": 61
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\Director\\dashboard_content.html",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/Director/dashboard_content.html",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/Director/dashboard_content.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 296,
+                "startColumn": 1,
+                "endLineNumber": 322,
+                "endColumn": 15
+              }
+            }
+          }
+        },
+        {
+          "kind": "reference",
+          "reference": {
+            "variableName": "codebase",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "c:\\Users\\ziadn\\OneDrive\\Bureau\\Mission APP 2 - Copy - Copy\\prototype Bootstrap\\teacher\\mission_details.html",
+                "_sep": 1,
+                "external": "file:///c%3A/Users/ziadn/OneDrive/Bureau/Mission%20APP%202%20-%20Copy%20-%20Copy/prototype%20Bootstrap/teacher/mission_details.html",
+                "path": "/c:/Users/ziadn/OneDrive/Bureau/Mission APP 2 - Copy - Copy/prototype Bootstrap/teacher/mission_details.html",
+                "scheme": "file"
+              },
+              "range": {
+                "startLineNumber": 207,
+                "startColumn": 1,
+                "endLineNumber": 252,
+                "endColumn": 44
+              }
+            }
+          }
+        }
+      ],
+      "codeCitations": []
+    }
+  ]
+}
